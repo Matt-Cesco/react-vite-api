@@ -1,9 +1,9 @@
-import FetchFunction from "../src/Utils/FetchFunction";
+import FetchFunctionCharacter from "../src/Utils/FetchFunctionCharacter";
 
 const App = () => {
     return (
         <div className="bg-zinc-800 text-white">
-            <FetchFunction />
+            <FetchFunctionCharacter />
             <div className="">asd</div>
         </div>
     );
