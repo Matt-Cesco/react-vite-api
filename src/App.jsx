@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CharacterCard from "../src/Components/CharacterCard";
+import EpisodeCard from "./Components/EpisodeCard";
 import getCharacters from "../src/Utils/getCharacters";
 import getEpisodes from "../src/Utils/getEpisodes";
 
@@ -45,10 +46,7 @@ const App = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 my-8">
                     {episodes.map((episode) => (
                         <div key={episode.id} className="bg-white border border-gray-200 rounded-lg shadow">
-                            <CharacterCard
-                                img_url={episode.img_url}
-                                name={episode.name}
-                            />
+                            <EpisodeCard img_url={episode.img_url} name={episode.name} air_date={episode.air_date} />
                         </div>
                     ))}
                 </div>
